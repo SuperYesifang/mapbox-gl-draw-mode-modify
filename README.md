@@ -56,8 +56,8 @@ map.addControl(draw);
 | prop         | type      | description                                                  |
 | ------------ | --------- | ------------------------------------------------------------ |
 | `editable`   | `boolean` | Whether the drawing can be re-edited. default: `true`.       |
-| `selectable` | `boolean` | Whether the drawing you have drawn can be selected. default: `true.` |
-| `draggable`  | `boolean` | Whether the drawing can be dragged and moved. default: `true`. |
-| `adjustable` | `boolean` | Whether the drawn graph can reposition the vertex. defualt : `true`. |
+| `selectable` | `boolean` | Whether the drawing you have drawn can be selected. default: `true`. |
+| `draggable`  | `boolean` | Whether the drawing can be dragged and moved. default: `true`.(valid when `editable` is `ture`) |
+| `adjustable` | `boolean` | Whether the drawn graph can reposition the vertex. defualt : `true`.(valid when `editable` is `ture`) |
 | `focus`      | `boolean` | Whether to retain the focus of the graphic after the drawing is completed. default: `true.` |
 

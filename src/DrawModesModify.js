@@ -28,13 +28,13 @@ function DrawModesModify(modes, opts = {}) {
 	};
 
 	function onSimpleDrag(state, e) {
-		if(!opts.draggable) return;
+		if (!opts.editable || !opts.draggable) return;
 		if (state.canDragMove) return this.dragMove(state, e);
 		if (this.drawConfig.boxSelect && state.canBoxSelect) return this.whileBoxSelect(state, e);
 	}
 
 	function onDirectDrag(state, e) {
-		if(!opts.draggable && !state.selectedCoordPaths.length && featureCollection.indexOf(state.featureId) !== -1) return;
+		if((!opts.editable || !opts.draggable) && !state.selectedCoordPaths.length && featureCollection.indexOf(state.featureId) !== -1) return;
 		if (!state.canDragMove) return;
 		state.dragMoving = true;
 		e.originalEvent.stopPropagation();

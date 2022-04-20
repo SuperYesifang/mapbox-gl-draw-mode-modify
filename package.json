@@ -1,6 +1,6 @@
 {
   "name": "mapbox-gl-draw-modes-modify",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Yesifang",
   "license": "MIT",
   "description": "这是一个mapbox-gl-draw绘图模式个性化修改器",
