@@ -1,3 +1,3 @@
-import DrawModeModify from "./DrawModeModify";
+import DrawModesModify from "./DrawModesModify";
 
-window.DrawModeModify = DrawModeModify;
+window.DrawModesModify = DrawModesModify;

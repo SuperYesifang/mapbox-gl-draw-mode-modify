@@ -1,3 +1,3 @@
-import DrawModeModify from "./DrawModeModify.js";
+import DrawModesModify from "./DrawModesModify.js";
 
-export default DrawModeModify;
+export default DrawModesModify;

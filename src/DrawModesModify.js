@@ -10,7 +10,7 @@ let defaultOpts = {
 	focus: true
 }
 let featureCollection = [];
-function DrawModeModify(modes, opts = {}) {
+function DrawModesModify(modes, opts = {}) {
 	if(!modes) return;
 	opts = { ...defaultOpts, ...opts};
 
@@ -65,4 +65,4 @@ function DrawModeModify(modes, opts = {}) {
 	return modes;
 }
 
-export default DrawModeModify;
+export default DrawModesModify;
