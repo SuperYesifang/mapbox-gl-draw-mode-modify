@@ -30,10 +30,9 @@
 		});
 
 		const draw = new MapboxDraw({
-			modes: DrawModeModify(MapboxDraw.modes, {
+			modes: DrawModesModify(MapboxDraw.modes, {
 				editable: false, // 绘制完成后禁止编辑
 				focus: false,  // 绘制完成后取消绘制图形的焦点
-				draggable: false // 禁用拖拽已绘制图形
 			})
 		});
 		map.addControl(draw, "top-right");

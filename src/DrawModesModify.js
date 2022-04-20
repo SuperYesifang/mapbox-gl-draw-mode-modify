@@ -52,7 +52,7 @@ function DrawModesModify(modes, opts = {}) {
 		if (!opts.selectable || CommonSelectors.noTarget(e)) return this.clickAnywhere(state);
 		if (opts.editable && opts.adjustable && CommonSelectors.isOfMetaType(Constants.meta.VERTEX)(e)) return this.clickOnVertex(state, e);
 		if (opts.selectable) {
-			if (!opts.adjustable && this.isSelected(e.featureTarget.properties.id)) return;
+			if ((!opts.editable || !opts.adjustable) && this.isSelected(e.featureTarget.properties.id)) return;
 			if (CommonSelectors.isFeature(e))this.clickOnFeature(state, e);
 		}
 	}; 
